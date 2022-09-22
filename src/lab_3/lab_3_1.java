@@ -13,16 +13,16 @@ public class lab_3_1 {
             Scanner scanner = new Scanner(System.in);
             System.out.print("Please enter number of element in array: ");
             arrayLength = scanner.nextInt();
-            int [] a = new int[arrayLength];
+            int[] myIntArr = new int[arrayLength];
 
             for (i = 0; i < arrayLength; i++) {
-                a[i] = new SecureRandom().nextInt(100);
+                myIntArr[i] = new SecureRandom().nextInt(100);
             }
-            System.out.println("Random Array: " + Arrays.toString(a));
+            System.out.println("Random Array: " + Arrays.toString(myIntArr));
 
             for(i = 0; i < arrayLength; i++)
             {
-                if(a[i] % 2 == 0)
+                if(myIntArr[i] % 2 == 0)
                 {
                     evenCount++;
                 }

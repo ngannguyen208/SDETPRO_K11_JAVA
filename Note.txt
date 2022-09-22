@@ -1,0 +1,3 @@
+﻿// 
+- ForLoop: khi biết số vòng lặp là bao nhiêu
+- WhileLoop: khi ko biết lặp bao nhiêu lần
