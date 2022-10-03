@@ -10,7 +10,7 @@ public class Dog extends Animal {
 
     @Override
     public int getSpeed() {
-        int randomSpeed = new SecureRandom().nextInt(60);
+        int randomSpeed = new SecureRandom().nextInt(50);
         return randomSpeed;
     }
 }
