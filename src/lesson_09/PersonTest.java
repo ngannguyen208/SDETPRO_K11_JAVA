@@ -1,4 +1,4 @@
-package Lesson_09;
+package lesson_09;
 
 public class PersonTest {
 
