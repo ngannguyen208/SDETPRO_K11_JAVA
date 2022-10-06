@@ -10,7 +10,7 @@ public class lab_06_04 {
         Scanner scanner = new Scanner(System.in);
         String url = scanner.nextLine();
         checkProtocol(url);
-        checkDomail(url);
+        checkDomain(url);
     }
 
     public static void checkProtocol(String url) {
@@ -26,7 +26,7 @@ public class lab_06_04 {
         }
     }
 
-    public static void checkDomail(String url) {
+    public static void checkDomain(String url) {
         String[] strValue = url.split("://");
         String dotCom = ".com";
         String dotNet = ".net";
