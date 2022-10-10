@@ -51,4 +51,13 @@ public class Animal {
             return new Animal(this);
         }
     }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", speed=" + speed +
+                ", withWings=" + withWings +
+                '}';
+    }
 }
