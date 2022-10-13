@@ -5,27 +5,33 @@ import java.util.List;
 
 public class AnimalTest {
     public void racingAnimal(List<Animal> animalList) {
-        int maxSpeed = 0;
-        String animalName = "";
-        int animalSpeed = 0;
+        Animal winner = animalList.get(0);
         for (Animal animal : animalList) {
-            animalSpeed = animal.getSpeed();
-            animalName = animal.getName();
-            if (maxSpeed < animal.getSpeed()) {
-                maxSpeed = animalSpeed;
-                System.out.println(animal.getName() + " with speed: " + animalSpeed);
+            if (animal.getSpeed() > winner.getSpeed())
+            {
+                winner = animal;
             }
         }
-        System.out.println("Winner is " + animalName + " with speed: " + animalSpeed);
+        System.out.println("The winner is " + winner.getName() + " with speed " + winner.getSpeed());
+    }
+
+    public void printAnimalInfo(Animal animal) {
+        System.out.println(animal.getAnimalInfo());
     }
 
     public static void main(String[] args) {
-        AnimalTest animalTest = new AnimalTest();
+
         Animal dog = new Dog();
         Animal horse = new Horse();
         Animal tiger = new Tiger();
 
+
         List<Animal> animalList = Arrays.asList(dog, horse, tiger);
+        AnimalTest animalTest = new AnimalTest();
+        animalTest.printAnimalInfo(dog);
+        animalTest.printAnimalInfo(horse);
+        animalTest.printAnimalInfo(tiger);
         animalTest.racingAnimal(animalList);
+
     }
 }
