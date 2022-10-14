@@ -3,7 +3,7 @@ package lab_10;
 public abstract class Animal {
 
    private String name;
-   private int speed;
+   int speed;
 
    public Animal() {
    }

@@ -2,8 +2,8 @@ package lesson_11;
 
 public class Animal {
 
-    private String name;
-    int speed;
+    String name;
+    public int speed;
 
     public Animal() {
     }
@@ -13,7 +13,7 @@ public class Animal {
     }
 
     // Support method
-    private String addAnimalPrefix() {
+    protected String addAnimalPrefix() {
         return "My name is," + this.name;
     }
 

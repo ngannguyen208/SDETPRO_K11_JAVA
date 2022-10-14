@@ -13,4 +13,9 @@ public class Dog extends Animal {
     public int getSpeed() {
         return this.speed;
     }
+
+    @Override
+    public String addAnimalPrefix() {
+        return "My name is: " + this.name;
+    }
 }

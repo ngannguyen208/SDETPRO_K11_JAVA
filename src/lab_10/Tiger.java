@@ -16,4 +16,5 @@ public class Tiger extends Animal {
     public int getSpeed() {
         return speed;
     }
+
 }

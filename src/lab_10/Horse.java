@@ -16,4 +16,5 @@ public class Horse extends Animal {
     public int getSpeed() {
         return speed;
     }
+
 }

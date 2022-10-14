@@ -7,5 +7,9 @@ public class Dog extends Animal {
     public void setSpeed(int speed) {
         this.speed = speed;
     }
-    
+
+    @Override
+    public String addAnimalPrefix() {
+        return super.addAnimalPrefix();
+    }
 }
