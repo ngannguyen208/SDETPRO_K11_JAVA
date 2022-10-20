@@ -6,9 +6,11 @@ public class DriverFactory {
         switch (platformType) {
             case IOS:
                 System.out.println("Init IOS Driver");
+                System.out.println(platformType.getVersion());
                 break;
             case ANDROID:
                 System.out.println("Init ANDROID Driver");
+                System.out.println(platformType.getVersion());
                 break;
             default:
                 System.out.println("Please provide the platform!");
