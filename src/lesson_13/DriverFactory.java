@@ -3,10 +3,12 @@ package lesson_13;
 public class DriverFactory {
 
     public static void initAppiumDriver(PlatformType platformType) {
+        AppiumDriver driver;
         switch (platformType) {
             case IOS:
-                System.out.println("Init IOS Driver");
-                System.out.println(platformType.getVersion());
+//                System.out.println("Init IOS Driver");
+//                System.out.println(platformType.getVersion());
+
                 break;
             case ANDROID:
                 System.out.println("Init ANDROID Driver");
